@@ -6,13 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Estilos para la tabla con CSS-->
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200,200,200);
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        td{
+            border: 1px solid rgb(190,190,190);
+            padding: 10px 20px;
+        }
+
+        th{
+            border: 1px solid rgb(190,190,190);
+            padding: 10px 20px;
+            background-color: gray;
+        }
+    </style>
 
 </head>
 
 
 <body>
     
-    <h1>Tablas</h>
+    <h1>Tablas</h1>
+    <hr>
+
+    <h2>Estructura Tabla en HTML</h2>
+    <!--Estructura de una tabla--> 
+    <table>
+        
+        <!--Etiqueta Fila-->
+        <tr>
+            <!--Etiqueta Columna-->
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+        </tr>
+
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+        </tr>
+
+    </table>
+    <br>
+
+
+    <h2>Tabla Alumnos</h2>
+    <hr>
+
+    <table>
+
+        <!-- Etiqueta Grupo de Columnas -->
+        <colgroup>
+            <col style="background-color: gray">
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+        <tr>
+            <!--Etiqueta Encabezado Tabla th-->
+            <th>&nbsp;</th>
+            <th>Pedro</th>
+            <th>Ricardo</th>
+            <th>Ana</th>
+            <th>Lucia</th>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>21</td>
+            <td>22</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Materia</td>
+            <td>Java</td>
+            <td>Python</td>
+            <td>JavaScript</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>Promedio</td>
+            <td>8</td>
+            <td>4</td>
+            <td>6</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Aprobado</td>
+            <td>Sí</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>Observación</td>
+            <td>Buen desempeño</td>
+            <td>Reprobado</td>
+            <td>Regular</td>
+            <td>Buen desempeño</td>
+        </tr>
 
 </body>
 </html>
