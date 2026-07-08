@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <!-- ----------Atributos input---------- -->
+    <form>
+        <!-- readonly: solo se puede leer no se puede modificar-->
+        <label for="usuario">Usuario readonly: </label>
+        <input type="text" id="usuario" name="usuario" value="Rana Matematica" readonly>
+
+        <br>
+        <br>
+
+        <!-- disabled: no se puede leer ni modificar -->
+        <label for="usuario">Usuario disabled: </label>
+        <input type="text" id="usuario" name="usuario" value="Rana Matematica" disabled>
+
+        <br>
+        <br>
+        
+        <label for="usuario">Usuario maxlength minlenght: </label>
+        <input type="text" id="usuario" name="usuario" maxlength="10" minlength="5" placeholder="Escribe Aqui Tu Usuario">
+
+
+
+
+        <br>
+        <br>
+        <input type="submit" value="enviar datos"> Enviar Datos
+
+        
+    </form>
+</body>
+</html>
