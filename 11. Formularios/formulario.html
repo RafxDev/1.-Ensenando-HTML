@@ -18,18 +18,44 @@
         <br>
         <br>
 
+        <!-- required: campo obligatorio -->
+        <label for="usuario">Usuario required: </label>
+        <input type="text" id="usuario" name="usuario" required placeholder="Escribe Aqui Tu Usuario">
+
+        <br>
+        <br>
+        
         <!-- disabled: no se puede leer ni modificar -->
         <label for="usuario">Usuario disabled: </label>
         <input type="text" id="usuario" name="usuario" value="Rana Matematica" disabled>
 
         <br>
         <br>
-        
+
         <label for="usuario">Usuario maxlength minlenght: </label>
         <input type="text" id="usuario" name="usuario" maxlength="10" minlength="5" placeholder="Escribe Aqui Tu Usuario">
 
+        <br>
+        <br>
 
+        <!-- pattern: establece una expresión regular para validar la entrada -->
+        <!-- En este caso, el patrón permite solo letras mayúsculas y minúsculas, y la longitud debe ser entre 5 y 10 caracteres -->
+        <label for="usuario">Usuario pattern: </label>
+        <input type="text" id="usuario" name="usuario" pattern="[A-Za-z]{5,10}" placeholder="Escribe Aqui Tu Usuario">
 
+        <br>
+        <br>
+
+        <!-- min max: establece los valores mínimos y máximos -->
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" placeholder="Ingresa Tu Edad" min="1" max="100">
+
+        <br>
+        <br>
+
+        <!-- multiple: permite seleccionar múltiples archivos -->
+        <label for="archivo">Sube Tus Archivos: </label>
+        <input type="file" id="archivo" name="archivo" value="file" multiple>
 
         <br>
         <br>
